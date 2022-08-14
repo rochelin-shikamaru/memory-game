@@ -1,12 +1,13 @@
+@font-face {
+    font-family: "streamers";
+    src: url(./font/Streamer.ttf);
+};
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    @font-face {
-        font-family: "Streamer";
-        src: url(./font/Streamer.ttf);
-    };
-   font-family: "Streamer";
+    font-family: "streamers";
 }
 
 body{
