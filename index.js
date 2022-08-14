@@ -2,7 +2,7 @@ import {data} from "./data.js";
 
 const container = document.querySelector("#container");
 const h1 = document.querySelector("h1");
-const b = document.querySelector("b");
+const h2 = document.querySelector("h2");
 const reload = document.querySelector(".reload");
 const button = document.querySelector("button");
 let vie = 10;
@@ -50,7 +50,7 @@ function flipcard (e){
         if (arr.length == 2 & newArr.length == 2){
             if (arr[0] == arr[1]) {
                 score += 5;
-                h1.innerText = `Score: ${score}`;
+                h1.innerText = `score: ${score}`;
                 setTimeout(()=>{
                     removeCard(newArr[0], newArr[1]);
                     newArr.map(item => card[item].style.visibility = "hidden");
@@ -60,7 +60,7 @@ function flipcard (e){
             else
             {
                 vie--;
-                b.innerText = vie;
+                h2.innerText = `vie: ${vie}`;
                 setTimeout(()=>{
                 removeCard(newArr[0], newArr[1]);
                 newArr.map(item => card[item].style.backgroundColor = "greenyellow");
@@ -77,14 +77,14 @@ function flipcard (e){
                 card[i].removeEventListener("click", flipcard);
              }
             setTimeout(() =>{
-                reload.style.transform = "translate(180%, 80%)";
-                reload.style.transition = "transform ease-in-out 0.4s";
+                reload.style.top = "100px";
+                reload.style.transition = "top ease-in-out 0.4s";
                 document.querySelector(".span").innerText = `Best Score: ${bestScore}`;
             }, 400);
         }
         if (score == 80) {
             setTimeout(() =>{
-                reload.style.transform = "translate(180%, 80%)";
+                reload.style.top = "100px";
                 reload.style.transition = "transform ease-in-out 0.4s";
                 document.querySelector(".span").innerText = `Congratulation`;
             }, 400);
