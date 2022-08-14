@@ -8,12 +8,12 @@ export const data = [
         img: "./images/akatsuki.jpeg"
     },
     {
-        name: "browser",
-        img: "./images/browser.png"
+        name: "mario&&luigi",
+        img: "./images/mario&&luigi.jpeg"
     },
     {
-        name: "browser",
-        img: "./images/browser.png"
+        name: "mario&&luigi",
+        img: "./images/mario&&luigi.jpeg"
     },
     {
         name: "bulbizarre",

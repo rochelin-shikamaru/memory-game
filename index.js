@@ -19,6 +19,7 @@ function newDivImage (){
     for(let i = 0; i < data.length; i++){
         const card = document.createElement("div");
         const image = document.createElement("img");
+        container.appendChild(card);
          card.setAttribute("myId", i);
          card.classList.add("backgroundCard");
          image.setAttribute("myIdImage", `l${i}`);
@@ -26,7 +27,6 @@ function newDivImage (){
          image.setAttribute("alt", data[i].name);
          image.classList.add("image");
          card.appendChild(image);  
-         container.appendChild(card);
     }
 }
 newDivImage ();
