@@ -5,7 +5,7 @@
 ### Links
 
 - Solution URL: [https://github.com/rochelin-shikamaru/memory-game](https://github.com/https://github.com/rochelin-shikamaru/memory-game)
-- Live Site URL: [https://e-co-page.netlify.app](https://e-co-page.netlify.app)
+- Live Site URL: [https://memorygame-card.netlify.app](https://memorygame-card.netlify.app)
 
 ## My process
 
@@ -15,5 +15,5 @@
 - Scss
 - Flexbox
 - CSS Grid
-- Responsive
+- Responsive srceen
 - JavaScript
