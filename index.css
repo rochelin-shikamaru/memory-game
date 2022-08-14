@@ -1,0 +1,94 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: -webkit-gradient(linear, left top, right top, from(#e3ffe7), to(#d9e7ff));
+  background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container {
+  width: Min(100%, 900px);
+  margin-inline: auto;
+  min-height: 80vh;
+  -webkit-transform: translateX(30%);
+          transform: translateX(30%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-auto-rows: 161px;
+  grid-gap: 8px;
+  border: 1px solid red;
+}
+
+#container > div {
+  background: greenyellow;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image {
+  width: 100px;
+  height: 161px;
+  border-radius: 5px;
+  border: 3px solid black;
+  visibility: hidden;
+  cursor: default;
+}
+
+.reload {
+  width: 300px;
+  height: 30vh;
+  border: #b69d63ff 5px solid;
+  -webkit-box-shadow: inset 3px 3px 5px black, inset -3px -3px 5px black;
+          box-shadow: inset 3px 3px 5px black, inset -3px -3px 5px black;
+  border-radius: 5px;
+  background: greenyellow;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(180%, -140%);
+          transform: translate(180%, -140%);
+  position: absolute;
+}
+
+.reload button {
+  width: 90px;
+  height: 30px;
+  border: none;
+  -webkit-box-shadow: inset 3px 3px 5px honeydew, inset -3px -3px 5px whitesmoke;
+          box-shadow: inset 3px 3px 5px honeydew, inset -3px -3px 5px whitesmoke;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.dashboard {
+  position: absolute;
+  top: 100px;
+  left: 10px;
+}
+/*# sourceMappingURL=index.css.map */
