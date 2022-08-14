@@ -15,5 +15,5 @@
 - Scss
 - Flexbox
 - CSS Grid
-- Responsive
+- Responsive srceen
 - JavaScript
