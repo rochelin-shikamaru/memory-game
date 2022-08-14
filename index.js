@@ -50,7 +50,7 @@ function flipcard (e){
         if (arr.length == 2 & newArr.length == 2){
             if (arr[0] == arr[1]) {
                 score += 5;
-                h1.innerText = `score: ${score}`;
+                h1.innerText = `score:${score}`;
                 setTimeout(()=>{
                     removeCard(newArr[0], newArr[1]);
                     newArr.map(item => card[item].style.visibility = "hidden");
